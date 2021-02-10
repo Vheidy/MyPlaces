@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Root View Controller-->
+        <!--My Places-->
         <scene sceneID="D2X-PJ-o8C">
             <objects>
                 <tableViewController id="lAY-eD-PHm" customClass="MainViewController" customModule="MyPlaces" customModuleProvider="target" sceneMemberID="viewController">
@@ -30,11 +30,11 @@
                             <outlet property="delegate" destination="lAY-eD-PHm" id="ma8-5e-kfc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Em2-o8-XmY"/>
+                    <navigationItem key="navigationItem" title="My Places" id="Em2-o8-XmY"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z6l-On-Kdm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-19" y="67"/>
+            <point key="canvasLocation" x="-20.289855072463769" y="66.84782608695653"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Zbk-gj-U1Y">
@@ -43,6 +43,12 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="UlF-je-TF4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="24"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="17"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="lAY-eD-PHm" kind="relationship" relationship="rootViewController" id="i4s-Vi-L3x"/>
